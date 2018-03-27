@@ -1,0 +1,24 @@
+{
+  "name": "car-racing",
+  "version": "1.0.0",
+  "description": "An interesting car racing game made by canvas",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiwiyan/car-racing.git"
+  },
+  "keywords": [
+    "car-racing",
+    "game",
+    "canvas"
+  ],
+  "author": "kiwiyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiwiyan/car-racing/issues"
+  },
+  "homepage": "https://github.com/kiwiyan/car-racing#readme"
+}
