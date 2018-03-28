@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>carGame</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/car.css">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <canvas id="gameContainer" width="750" height="2688" class="car_gameContainer">
+      浏览器版本过低，请更换更高版本的浏览器
+    </canvas>
+  </div>
+
+  <script src="./js/libs/easeljs-0.8.1.min.js"></script>
+  <script src="./js/libs/preloadjs-0.6.2.min.js"></script>
+  <script src="./js/car.js"></script>
+
+
+  <script>
+    //静态资源
+    var manifest = [
+        {src: './assets/images/car4.png', id: 'car'},
+        {src: './assets/images/bg2.png', id: 'bg1'}
+    ];
+
+    //总的倒计时时间， allTime  30
+    // 道具作用的里程数  propMill 300
+    // 默认加速值  fixM 20
+    var carGame = new CarGame(30, 300, 20);
+    carGame.init(manifest);
+  </script>
+</body>
+
+</html>
